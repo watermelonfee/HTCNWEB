@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bai15</title>
+        <link rel="stylesheet" type="text/css" href="Document.css">
+    </head>
+    <body> 
+    <div id="content" class="container">
+        <fieldset>
+            <legend>Your message:</legend>
+            <table>
+                <tr>
+                    <td><label for="emailTo">To</label></td>
+                    <td><input type="text" name="TxtTo" id="emailTo" readonly="readonly" size="20" placeholder="Example Cafe"></input></td>
+                </tr>
+
+                <tr>
+                    <td><label for="emailFrom">Your email</label></td>
+                    <td><input type="text" name="txtFrom" id="emailFrom" size="20" tabindex="1" maxlength="250"/></td>
+                </tr>
+
+                <tr>
+                    <td><label from="emailBody">Message</label></td>
+                    <td><textarea name="txtBody" id="emailBody" cols="50" rows="10" tabindex="2"></textarea></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>How you found us:</legend>
+            <table>
+                <tr>
+                    <td><label for="list">How did you hear of us</label></td>
+                    <td>
+                        <select>
+                            <option value="google">Google</option>
+                            <option value="facebook">Facebook</option>
+                            <option value="youtube">Youtube</option>
+                            <option value="Khac">Khác</option>
+                        </select>
+                    </td>
+                </tr>
+                    <tr>
+                        <td><label from="checkbox">Newsletter</label></td>
+                        <td>
+                            <input type="checkbox" name="checkbox" id="checkbox" checkend/>
+                            <span>Ensure this box is checked if you would like to receive email update</span>
+                        </td>
+                    </tr>            
+            </table>
+        </fieldset>
+        <button type="submit">Send Message</button>
+
+        <fieldset>
+            <legend><i>Contact Information</i></legend>
+            <table>
+            <tr>
+                <td><label for="firstName">Fist name:</label></td>
+                <td><input type="text" name="txtfirstName" id="firstName" /></td>
+            </tr>
+            <tr>
+                <td><label for="lastName">Last name:</label></td>
+                <td><input type="text" name="txtlastName" id="lastName" /></td>
+            </tr>
+            <tr>
+                <td><label for="e-mail:">E-mail</label></td>
+                <td><input type="text" name="txte-mail" id="e-mail"/></td>
+            </tr>
+        </table>
+        </fieldset>
+
+        <fieldset>
+            <legend><i>Competition Question</i></legend>
+            <table>
+                <tr>
+                    <td><labe for="check">How tall is the Eiffel Tower in Paris France?</labe></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="check" id="check"/><span>584 ft</span></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="check" id="check"/><span>784 ft</span></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="check" id="check"/><span>984 ft</span></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="check" id="check"/><span>1184 ft</span></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend><i>Tiebreaker Question</i></legend>
+            <table>
+                <tr>
+                    <td><label for="ques">In 25 words of less, say why you would like to win $10,000:</label></td>
+                </tr>
+                <tr>
+                    <td><textarea name="ques" id="ques" cols="50" rows="10"></textarea></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend><i>Enter competition</i></legend>
+            <input type="submit" value="Enter Competition"/>
+        </fieldset>
+    </div>
+</body>
+</html>
