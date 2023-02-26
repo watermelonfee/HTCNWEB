@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bai17</title>
+        <link rel="stylesheet" type="text/css" href="Document.css">
+        <style>
+            body{
+            border: height="700";width:"1500"; background-color: rgb(237, 179, 86);
+            }
+        </style>
+    </head>
+    <body> 
+        <div>
+        <center><h2>Survey Form</h2></center>
+        <p>If you are interested in purchasing one or more of uor products,before
+            ordering please complete some or all of the following survey for our marketing department.
+            Answering any question is optional, and all information will be kept strictly confidential.
+            Thank you very much for your time!
+        </p>
+        <table>
+            <tr><label for="what">1. What is your name?</label></tr>
+        <br>
+            <tr><input type="text" name="txtWhat" id="What"></tr>
+        <br>
+        <br>
+        <table>
+                <tr><label for="date">2. What is your date of birth?</label></tr>
+                <tr>
+                    <td><label for="date-Month">Month:</label></td>
+                    <td>
+                        <select>
+                            <option value="January">January</option>
+                            <option value="February">February</option>
+                            <option value="March">March</option>
+                            <option value="April">April</option>
+                            <option value="May">May</option>
+                            <option value="June">June</option>
+                            <option value="August">August</option>
+                            <option value="September">September</option>
+                            <option value="October">October</option>
+                            <option value="November">November</option> 
+                            <option value="December">December</option>
+                        </select>
+                    </td>
+                
+                    <td><label for="date-Date">Date:</label></td>
+                    <td>
+                        <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option> 
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option> 
+                            <option value="21">21</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label for="year">Year:</label>
+                        <input type="text" name="txtYear" id="year">
+                    </td>
+                </tr>
+        </table>
+        <br>
+        <tr>
+            <label for="body">3. What is your mailing address (if you would like to have a hard copy
+            of our catalog sent to you)?</label>
+        </tr>
+        <br>
+        <tr>
+            <textarea name="txtBody" id="body" cols="70" rows="10" tabindex="1"placeholder="Number/P.O. Box/Route:"></textarea>
+        </tr>
+        <br>
+        <br>
+        <tr> <label for="what1">4. What is your email address?</label></tr>
+            <br>
+        <tr><input type="text" name="txtWhat1" id="what1"></tr>
+        <br>
+        <br>
+        <tr>
+            <label for="checkradio">5. Have you viewed our online product catalog?</label>
+        </tr>
+        <br>
+        <tr>
+            <td>
+                <input type="radio" name="checkRadio" id="radio1">
+                <label for="radio1">Yes</label>
+            </td>
+            <td>
+                <input type="radio" name="checkRadio" id="radio2">
+                <label for="radio2">No</label>
+            </td>
+        </tr>
+        <br>
+        <br>
+        <tr>
+            <label for="checkbox">6. If so, what product(s),besides the one you are ordering,
+                might you be interested in purchasing in the future? (Check all that apply)
+            </label>
+        </tr>
+        <br>
+            <tr>
+                <input type="checkbox" name="checkbox" id="checkbox">
+                <label for="checkbox">VCR</label>
+            </tr>
+            <br>
+            <tr>
+                <input type="checkbox" name="checkbox" id="checkbox">
+                <label for="checkbox">Big Screen TV</label>
+            </tr>
+            <br>
+            <tr>
+                    <input type="checkbox" name="checkbox" id="checkbox">
+                    <label for="checkbox">Big Screen TV</label>
+            </tr>
+            <br>
+            <tr>
+                    <input type="checkbox" name="checkbox" id="checkbox">
+                    <label for="checkbox">Camera Equipment</label>
+            </tr>
+            <br>
+            <tr>
+                <input type="checkbox" name="checkbox" id="checkbox">
+                <label for="checkbox">Other</label>
+                <input type="text" name="txt" id="check" placeholder="Please List:">
+            </tr>
+            <br>
+            <br>
+            <tr>
+                <label for="question">7. Do you have any questions, comments or suggestions
+                    before proceeding to the Order Form?
+                </label>
+            </tr>
+            <br>
+            <tr>
+                <textarea name="txtQuestion" id="question" cols="70" rows="15" placeholder="Your Input:"></textarea>
+            </tr>
+            <br>
+            <br>
+            <tr>
+                    <center><input type="button" value="Send Form">
+                    <input type="button" value="Clear Form"></center>
+            </tr>
+</table>
+    </div>
+    </body>
+</html>
