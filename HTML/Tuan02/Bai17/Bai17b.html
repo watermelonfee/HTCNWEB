@@ -5,14 +5,17 @@
         <title>Bai17b</title>
         <link rel="stylesheet" type="text/css" href="Document.css">
         <style>
+            .browser{
+                width: 200px;
+            }
         </style>
     </head>
     <body>
         <div>
             <table>
                 <tr>
-                    <label for="browser">Browser:</label>
-                    <select>
+                    <label for="browser">Browser: </label>
+                    <select class="browser">
                         <option value=""></option>
                         <option value="khac">Khác</option>
                     </select>
@@ -20,15 +23,91 @@
                 <br>
                 <br>
                 <tr>
-                    <label for="userName">Username:</label>
+                    <label for="userName">Username: </label>
                     <input type="text" name="txtUsername" id="userName">
                 </tr>
                 <br>
                 <br>
                 <tr>
-                    
+                    <label for="encryption">Encryption: </label>
+                    <select class="encryption">
+                        <option value="2084(High Grade)">2084 (High Grade)</option>
+                        <option value="khac">Khác</option>
+                    </select>
                 </tr>
-            </table>
+                <br>
+                <br>
+                <input type="range" min="0" max="100">
+                <br>
+                <br>
+                <tr>
+                    <input type="number" nam="number" id="number" placeholder="50">
+                </tr>
+                <br>
+                <br>
+                <tr>
+                    <label type="date">Birthday: </label>
+                    <input type="date" nam="date" id="name">
+                </tr>
+                <br>
+                <br>
+                <tr>
+                    <label for="color"> Select your favorite Color: </label>
+                    <input type="color" name="color" id="color" value="" size="20" maxlength="20" >
+                </tr>
+                <br>
+                <br>
+                <tr>
+                    <label for="month"> Birthday (month and year): </label>
+                    <input type="month" name="month" id="month" >
+                </tr>
+                <br>
+                <br>
+                <tr>
+                    <label for="week"> Select a week: </label>
+                    <input type="week" name="week" id="week" >
+                </tr>
+                <br>
+                <br>
+                <tr>
+                    <label for="time"> Select a time: </label>
+                    <input type="time" name="time" id="time" >
+                </tr>
+                <br>
+                <br>
+                <tr>
+                    <label for="datetime"> Birthday (date and time): </label>
+                    <input type="datetime" name="datetime" id="datetime" >
+                </tr>
+                <br>
+                <br>
+                <tr>
+                    <label for="email">E-mail: </label>
+                    <input type="email" name="Email" id="email">
+                </tr>
+                <br>
+                <br>
+                <tr>
+                    <label for="search">Search Google: </label>
+                    <input type="search" name="Search" id="search">
+                </tr>
+                <br>
+                <br>
+                <tr>
+                    <label for="Tel">Telephone: </label>
+                    <input type="tel" name="Tel" id="tel">
+                </tr>
+                <br>
+                <br>
+                <tr>
+                    <label for="add">Add your homepage: </label>
+                    <input type="text" name="txtAdd" id="add">
+                </tr>
+                <br>
+                <br>
+                <input type="button" value="Submit">
+                </table>
+                <p><b>Note: </b>The datalist tag is not supported in Safari or IE9 (and earlier)</p>
         </div>
     </body>
 </html>
