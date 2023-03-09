@@ -1,0 +1,145 @@
+#container {
+    display: flex;
+    justify-content: space-around;
+}
+
+#Left {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 20%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+}
+
+#Right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#text {
+    color: black;
+    position: absolute;
+    right: 300px;
+    top: 100px;
+    left: 120px;
+}
+
+#Banner {
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+}
+
+#Left1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 75%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+#Product {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: forestgreen;
+    width: 178px;
+    height: 50px
+}
+
+#borderP {
+    border-color: green;
+    border-right: 1px;
+}
+
+#Right1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+#sear {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(250, 253, 250);
+    width: 200px;
+    height: 30px;
+    border: 1px;
+    border-color: rgb(241, 245, 245);
+    border-style: outset;
+}
+
+#sor {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(250, 253, 250);
+    width: 136px;
+    height: 48px;
+    border: 1px;
+    border-color: rgb(202, 210, 210);
+    border-style: ridge;
+    background-color: rgb(238, 232, 234);
+}
+
+
+/*#Right1-1 {
+    width: 45%;
+    padding: 10px;
+    background-color: lightgray;
+    border: 1px solid gray;
+}*/
+
+#container-2 {
+    display: flex;
+    justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container-3 {
+    display: flex;
+    justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container-4 {
+    display: flex;
+    justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container-5 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container-6 {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: #171718;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
