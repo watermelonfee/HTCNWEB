@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21025781-Lê Minh Thư</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0 auto;
+        }
+        
+        .wrapper {
+            width: 1000px;
+            background-color: #fff;
+            border: 1px solid black;
+        }
+        
+        header {
+            position: relative;
+            width: 1000px;
+            height: 120px;
+            background-color: #294e79;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        
+        .logo {
+            position: relative;
+            left: 10px;
+            bottom: 15px;
+            width: 80px;
+            height: 130px;
+        }
+        
+        .name1 {
+            font-size: 40px;
+            color: #fff;
+            position: absolute;
+            left: 100px;
+            top: 8px;
+        }
+        
+        .name2 {
+            color: #fff;
+            position: absolute;
+            left: 95px;
+            top: 60px;
+        }
+        
+        #search1 {
+            background-color: #1c3451;
+            border: 1px solid #4579b7;
+            color: #fff;
+            margin-right: 15px;
+            width: 250px;
+            height: 25px;
+        }
+        
+        #search1::placeholder {
+            padding-left: 5px;
+            color: #fff;
+        }
+        
+        #search2 {
+            background-color: #1c3451;
+            border: 1px solid #4579b7;
+            color: #fff;
+            height: 25px;
+            padding: 0 3px;
+        }
+        
+        .search_form {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        
+        .nav {
+            display: flex;
+            width: 550px;
+            position: absolute;
+            bottom: 0px;
+            right: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .nav_item {
+            position: relative;
+            padding: 10px 15px;
+            background-color: #3d73b1;
+        }
+        
+        .nav_item:hover {
+            background-color: #8babd0;
+        }
+        
+        .nav_item a {
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        
+        .nav1 {
+            display: none;
+            position: absolute;
+            top: 39px;
+            left: 0px;
+            width: 180px;
+            height: 60px;
+            background-color: #8babd0;
+        }
+        
+        .nav2 {
+            box-sizing: border-box;
+            padding-left: 15px;
+            line-height: 30px;
+            height: 50%;
+            border: 1px solid rgb(158, 196, 240);
+            color: white;
+        }
+        
+        .nav_item:hover .nav1 {
+            display: block;
+            background-color: #9bbbe0;
+        }
+        
+        .nav2:hover {
+            background-color: #edf6ff;
+            cursor: pointer;
+        }
+        
+        .container {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding-bottom: 60px;
+            width: 100%;
+            display: flex;
+        }
+        
+        .Left {
+            display: flex;
+            width: 70%;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        
+        .p1 {
+            width: 55%;
+        }
+        
+        .p2 {
+            width: 35%;
+        }
+        
+        .p3 {
+            background-color: #f9f7f7;
+            width: 30%;
+            padding-left: 20px;
+            margin-top: 50px;
+            margin-right: 10px;
+        }
+        
+        .Left1 {
+            font-family: 'Times New Roman', Times, serif;
+            width: 95%;
+            padding: 40px 0px 15px 0px;
+            font-size: 25px;
+            border-bottom: 2px dashed gray;
+        }
+        
+        .p1_1 {
+            padding: 20px 30px 20px 15px;
+            text-align: justify;
+            color: red;
+            font-style: italic;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-shadow: 8px 8px 5px green;
+        }
+        
+        table input {
+            height: 22px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            background-color: #f7f7f7;
+            border: 1px solid gray;
+        }
+        
+        table textarea {
+            background-color: #f7f7f7;
+        }
+        
+        .p1_sub {
+            box-sizing: border-box;
+            margin-top: 20px;
+            height: 30px;
+            font-size: 15px;
+            padding: 0 8px;
+            line-height: 28px;
+            border: 1px solid gray;
+        }
+        
+        .p2_1 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            padding: 15px 0px 15px;
+            width: 100%;
+            font-size: 25px;
+            border-bottom: 2px dashed gray;
+        }
+        
+        .p2_2 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 10px 0 40px 0;
+        }
+        
+        .p2_3 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .p2_4 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding-top: 20px;
+        }
+        
+        .p3_1 {
+            font-family: 'Times New Roman', Times, serif;
+            padding: 15px 0px 15px;
+            width: 90%;
+            margin-right: 30px;
+            font-size: 25px;
+            border-bottom: 2px dashed rgb(128, 124, 124);
+        }
+        
+        .p3_anh {
+            width: 250px;
+            height: 100px;
+            padding: 4px;
+            margin: 25px 0px;
+            border: 1px solid gray;
+        }
+        
+        .p3_2 {
+            width: 250px;
+            margin-right: 40px;
+            float: left;
+            text-align: justify;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 15px;
+            display: block;
+        }
+        
+        .p3_3 {
+            color: #00436d;
+            font-weight: bold;
+            margin-right: 30px;
+            float: right;
+            padding-top: 20px;
+            text-decoration: none;
+        }
+        
+        footer {
+            background-color: #1c3451;
+            height: 35px;
+        }
+        
+        .footer_1 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding-left: 15px;
+            color: #8babd0;
+            line-height: 35px;
+        }
+        
+        .white {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 35px;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <img src="/IMAGE/AnhLogo.PNG" alt="" class="logo">
+            <p class="name1">FlowerBox 360</p>
+            <p class="name2">... to get your daily dose of luxury roses!</p>
+            <form action="" class="search_form">
+                <input type="text" name="" id="search1" placeholder="Seach the site...">
+                <input id="search2" type="button" value="GO">
+            </form>
+            <div class="nav">
+                <div class="nav_item"><a href="">Home</a></div>
+                <div class="nav_item"><a href="">Promotion</a></div>
+                <div class="nav_item"><a href="">Gift Baskets</a></div>
+                <div class="nav_item"><a href="">Flower Service</a>
+                    <div class="nav1">
+                        <div class="nav2"><b>Flower for Wedding</b></div>
+                        <div class="nav2"><b>Flower for Conference</b></div>
+
+                    </div>
+                </div>
+                <div class="nav_item"><a href="">About</a></div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="Left">
+                <p class="Left1">Why Not Contact Us Today!</p>
+                <div class="p1">
+                    <p class="p1_1"><b>For FlowerBox 360 shoppers, that means not only can you send your friends and loved ones the highest quality flowers found on online, but that you can do so at a great value.</b></p>
+                    <form action="" class="c1_form">
+                        <table>
+                            <tr>
+                                <td><label for="name_ip">Name:</label></td>
+                                <td><label for="mail_ip">Email:</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="" id="name_ip"></td>
+                                <td><input type="email" name="" id="mail_ip"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="tel_ip">Telephone:</label></td>
+                                <td><label for="sub_ip">Subject:</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="tel" name="" id="tel_ip"></td>
+                                <td><input type="text" name="" id="sub_ip"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><label for="mess_ip">Message:</label></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"> <textarea name="" id="mess_ip" cols="44" rows="4"></textarea></td>
+                            </tr>
+                            <tr>
+                                <tr>
+                                    <td><input class="p1_sub" type="button" value="Submit"> <input class="p1_sub" type="button" value="Reset"></td>
+                                </tr>
+                            </tr>
+                        </table>
+
+                    </form>
+                </div>
+                <div class="p2">
+                    <p class="p2_1">FlowerBox 360 Info!</p>
+                    <p class="p2_2">Operating Hours: <br> Monday-Friday: 9.00am-5.00pm.<br> Saturday:9.00am-1.00pm.
+                        <br> Sunday: Closed (No Deliveries)<br> ORDER ONLINE 24/7
+                    </p>
+                    <p class="p2_3">
+                        Software Engineering Dept. <br> Information Technology Falcuty<br> First Floor, H Building
+                    </p>
+                    <p class="p2_4">
+                        12 Nguyen Van Bao St., Ward 4<br> Go Vap District<br> Ho Chi Minh City<br> Tel: 0283 8940 390<br> Fax: 0283.9940 954
+                    </p>
+
+
+                </div>
+            </div>
+            <div class="p3">
+                <p class="p3_1">Discount & Specials</p>
+                <img src="/IMAGE/Hoa.jpg" alt="" class="p3_anh">
+                <p class="p3_2">FlowerBox 360 offers many great discounts throughout the year, from coupons and coupon codes, to promo codes and other savings. We also offer military flower discounts to our wonderful troops!</p>
+                <a class="p3_3" href="">Read More >></a>
+            </div>
+        </div>
+        <footer>
+            <p class="footer_1"><span class="white">Copyright © 2017 - All Rights Reserved -</span> Software Engineering Department - Industrial University of Ho Chi Minh City</p>
+        </footer>
+    </div>
+</body>
+
+</html>

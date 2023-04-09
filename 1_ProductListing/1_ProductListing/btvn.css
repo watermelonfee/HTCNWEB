@@ -132,13 +132,51 @@
     background-color: rgb(238, 232, 234);
 }
 
+#Best-seller {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #8C5D11;
+    left: 180px;
+    top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    font-size: 13px;
+    width: 80px;
+    height: 30px;
+    background-color: #FFC970;
+    border-radius: 20px 20px 20px 20px;
+}
 
-/*#Right1-1 {
-    width: 45%;
-    padding: 10px;
-    background-color: lightgray;
-    border: 1px solid gray;
-}*/
+#New {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #8C5D11;
+    left: 180px;
+    top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    font-size: 13px;
+    width: 40px;
+    height: 30px;
+    background-color: #FFC970;
+    border-radius: 20px 20px 20px 20px;
+}
+
+#New1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    left: 180px;
+    top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    font-size: 13px;
+    width: 40px;
+    height: 30px;
+    border-radius: 20px 20px 20px 20px;
+}
 
 #container-2 {
     display: flex;
@@ -169,10 +207,55 @@
 
 #container-6 {
     display: flex;
+    align-items: center;
     justify-content: space-around;
-    align-items: flex-start;
-    height: 200px;
     background-color: #171718;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
+    font-size: 15px;
+    width: 1460px;
+    height: 400px;
+}
+
+table option {
+    height: 20px;
+    width: 40px;
+    background-color: #171718;
+}
+
+#container-7 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 100%;
+    font-size: 20px;
+}
+
+#search1 {
+    background-color: #1c3451;
+    border-radius: 10px 10px 5px 5px #fafcff;
+    color: #fff;
+    margin-right: 15px;
+    width: 250px;
+    height: 25px;
+}
+
+#search1::placeholder {
+    padding-left: 5px;
+    color: #fff;
+}
+
+#search2 {
+    background-color: #25a836;
+    border-radius: 5px 5px 5px 5px;
+    color: #fff;
+    height: 25px;
+    padding: 0 3px;
+}
+
+.search_form {
+    position: absolute;
+    top: 2515px;
+    right: 140px;
 }
